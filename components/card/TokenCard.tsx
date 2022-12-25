@@ -11,7 +11,6 @@ const TokenCard: FC<TokenCardProps> = ({title, icon}) => {
         <Center
             borderRadius={'lg'}
             border='1px'
-            borderColor={useColorModeValue('red','black')}
             bg='blue.500'
             height='240px'>
                 <VStack>

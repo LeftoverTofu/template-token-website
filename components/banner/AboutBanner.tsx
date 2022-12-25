@@ -4,7 +4,7 @@ import { FC } from "react"
 const AboutBanner: FC = () => {
     return (
             <Container
-                boxShadow='dark-lg'
+                boxShadow='2xl'
                 maxW='container.xl'
                 p={4}
                 borderRadius={'lg'}

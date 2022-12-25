@@ -20,7 +20,7 @@ const MainBanner: FC = () => {
 
     return (
         <Box mb={4}>
-        <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
+        <Box display={'flex'} alignItems={'center'} justifyContent={'center'} boxShadow='2xl'>
             <Box 
                 backgroundImage="url('/7473280.jpg')"
                 backgroundRepeat="repeat-x"
