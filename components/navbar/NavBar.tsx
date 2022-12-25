@@ -12,10 +12,12 @@ const Links = ['Home', 'Telegram', 'Token', 'Chart', 'Whitepaper'];
 const NavBar: FC<NavBarProps> = ({ children }) => {
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+    const color = useColorModeValue('rgb(255,255,255)', 'rgb(0,0,0)');
     
     return (
         <VStack align={"flex-start"} h="100%">
-             <Box w="100vw" h={16} bg={useColorModeValue('rgba(255,255,255,0.4)', 'rgba(0,0,0,0.4)')} px={4}>
+             <Box w="100vw" h={16} bg={color} px={4}>
                 <Flex boxShadow='2xl' h={16} alignItems={'center'} justifyContent={'space-between'}>
                 <IconButton
                     size={'md'}
@@ -45,8 +47,8 @@ const NavBar: FC<NavBarProps> = ({ children }) => {
                 </HStack>
                 </Flex>
                 {isOpen ? (
-                <Box pb={4} display={{ md: 'none' }}>
-                    <Stack as={'nav'} spacing={4}>
+                <Box pb={4} display={{ md: 'none' }} position={'relative'} bg={color} zIndex={1}>
+                    <Stack as={'nav'} spacing={4} position={'relative'}>
                     {Links.map((link) => (
                         <NavLink key={link}>{link}</NavLink>
                     ))}

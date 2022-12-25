@@ -37,7 +37,7 @@ const MainBanner: FC = () => {
                 display={"flex"}
                 flexDirection={"column"}
                 justifyContent={"space-between"}
-                zIndex={1}
+                zIndex={0}
                 >
                 <Heading>[INSERT TITLE HERE!]</Heading>
                 <Text>[INSERT SUB TEXT]</Text>
