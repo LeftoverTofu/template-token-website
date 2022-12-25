@@ -9,7 +9,6 @@ const AboutBanner: FC = () => {
                 p={4}
                 borderRadius={'lg'}
                 border='1px'
-                
                 mb={6}
                 centerContent>
             <Heading>About</Heading>

@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-        <Box h={'100%'} bg={useColorModeValue('rgba(255,255,255,0.4)', 'rgba(0,0,0,0.4)')} px={4}>
+        <Box h={'100%'} px={4}>
           <MainBanner/>
           <AboutBanner/>
           <TokenInfoBanner/>

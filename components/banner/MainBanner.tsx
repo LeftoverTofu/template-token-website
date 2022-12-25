@@ -19,7 +19,7 @@ const MainBanner: FC = () => {
         : `${slidingAnimation} infinite 25s linear`
 
     return (
-        <>
+        <Box mb={4}>
         <Box display={'flex'} alignItems={'center'} justifyContent={'center'}>
             <Box 
                 backgroundImage="url('/7473280.jpg')"
@@ -48,7 +48,7 @@ const MainBanner: FC = () => {
                 Image by <a href="https://www.freepik.com/free-vector/hand-drawn-japanese-wave-pattern-set_28773283.htm#query=background%20repeat%20japanese&position=24&from_view=search&track=ais">Freepik</a>
             </Box>
         </Flex>
-        </>
+        </Box>
     )
 }
 

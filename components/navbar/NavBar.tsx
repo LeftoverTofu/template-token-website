@@ -16,7 +16,7 @@ const NavBar: FC<NavBarProps> = ({ children }) => {
     const color = useColorModeValue('rgb(255,255,255)', 'rgb(0,0,0)');
     
     return (
-        <VStack align={"flex-start"} h="100%">
+        <VStack align={"flex-start"} h="100%" bg={useColorModeValue('rgba(255,255,255, 0.4)', 'rgba(0,0,0, 0.4)')}>
              <Box w="100vw" h={16} bg={color} px={4}>
                 <Flex boxShadow='2xl' h={16} alignItems={'center'} justifyContent={'space-between'}>
                 <IconButton
