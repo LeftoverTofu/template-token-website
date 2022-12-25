@@ -21,7 +21,7 @@ const TokenInfoBanner: FC = () => {
             p={4}
             borderRadius={'lg'}
             border='1px'
-            borderColor={useColorModeValue('red','black')}
+            
             mb={6}
             centerContent>
             <Heading>Token Info</Heading>

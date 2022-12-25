@@ -9,7 +9,7 @@ const AboutBanner: FC = () => {
                 p={4}
                 borderRadius={'lg'}
                 border='1px'
-                borderColor={useColorModeValue('red','black')}
+                
                 mb={6}
                 centerContent>
             <Heading>About</Heading>
