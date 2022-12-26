@@ -2,11 +2,12 @@ import { Link, useColorModeValue } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 
 interface NavLinkProps {
+    href: string,
     children: ReactNode
 }
 
 
-const NavLink: FC<NavLinkProps> = ({ children }: { children: ReactNode }) => (
+const NavLink: FC<NavLinkProps> = ({ href, children }) => (
   <Link
     px={2}
     py={1}
@@ -14,7 +15,7 @@ const NavLink: FC<NavLinkProps> = ({ children }: { children: ReactNode }) => (
       textDecoration: 'none',
       bg: useColorModeValue('gray.200', 'gray.700'),
     }}
-    href={'#'}>
+    href={href}>
     {children}
   </Link>
 );

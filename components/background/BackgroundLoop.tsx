@@ -30,6 +30,7 @@ const BackgroundLoop: FC<BackgroundLoopProps> = ({children}) => {
                     w={'full'}
                     h={{base: '500px', md: '700px'}}
                     animation={animation}
+                    boxShadow='2xl'
                     >
                 </Box>
                 {children}

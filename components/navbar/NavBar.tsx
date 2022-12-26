@@ -7,7 +7,13 @@ interface NavBarProps {
     children: ReactNode
 }
 
-const Links = ['Home', 'Telegram', 'Token', 'Chart', 'Whitepaper'];
+const Links = [
+    { name: 'Home', href: '/home'},
+    { name: 'Telegram', href: '#'},
+    { name: 'Token', href: '#'},
+    { name: 'Chart', href: '#'},
+    { name: 'Whitepaper', href: '#'},
+]
 
 const NavBar: FC<NavBarProps> = ({ children }) => {
     const { colorMode, toggleColorMode } = useColorMode();
@@ -41,7 +47,7 @@ const NavBar: FC<NavBarProps> = ({ children }) => {
                         {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
                     </Button>
                     {Links.map((link) => (
-                        <NavLink key={link}>{link}</NavLink>
+                        <NavLink key={link.name} href={link.href}>{link.name}</NavLink>
                         ))}
                     </>
                 </HStack>
@@ -50,7 +56,7 @@ const NavBar: FC<NavBarProps> = ({ children }) => {
                 <Box pb={4} display={{ md: 'none' }} position={'relative'} bg={color} zIndex={1}>
                     <Stack as={'nav'} spacing={4} position={'relative'}>
                     {Links.map((link) => (
-                        <NavLink key={link}>{link}</NavLink>
+                        <NavLink key={link.name} href={link.href}>{link.name}</NavLink>
                     ))}
                     </Stack>
                 </Box>
